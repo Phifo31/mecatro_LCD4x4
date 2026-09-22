@@ -9,10 +9,29 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "C/C++ Runner: Debug Session",
+            "type": "cppdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "cwd": "/home/phifo/Sandbox/mecatro_LCD4x4/test_git/mecatro_LCD4x4/src",
+            "program": "/home/phifo/Sandbox/mecatro_LCD4x4/test_git/mecatro_LCD4x4/src/build/Debug/outDebug",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/home/phifo/.platformio/packages/toolchain-xtensa-esp-elf/bin/xtensa-esp32s3-elf-gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "/home/phifo/Sandbox/mecatro_bis/mecatro_LCD4x4/.pio/build/development/firmware.elf",
+            "executable": "/home/phifo/Sandbox/mecatro_LCD4x4/test_git/mecatro_LCD4x4/.pio/build/development/firmware.elf",
             "projectEnvName": "development",
             "toolchainBinDir": "/home/phifo/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart",
@@ -25,7 +44,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "/home/phifo/Sandbox/mecatro_bis/mecatro_LCD4x4/.pio/build/development/firmware.elf",
+            "executable": "/home/phifo/Sandbox/mecatro_LCD4x4/test_git/mecatro_LCD4x4/.pio/build/development/firmware.elf",
             "projectEnvName": "development",
             "toolchainBinDir": "/home/phifo/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart"
@@ -34,7 +53,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "/home/phifo/Sandbox/mecatro_bis/mecatro_LCD4x4/.pio/build/development/firmware.elf",
+            "executable": "/home/phifo/Sandbox/mecatro_LCD4x4/test_git/mecatro_LCD4x4/.pio/build/development/firmware.elf",
             "projectEnvName": "development",
             "toolchainBinDir": "/home/phifo/.platformio/packages/toolchain-xtensa-esp-elf/bin",
             "internalConsoleOptions": "openOnSessionStart",
